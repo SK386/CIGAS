@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
+@media screen and (min-width:820px){
+    *{
+      margin: 0;
+      padding: 0;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    
+    a{
+      text-decoration: none;
+      color: aliceblue;
+    }
+    
+    ul{
+      list-style: none;
+      display: flex;
+    }
+    /* navbar customization */
+    .space__items{
+      margin: 0 5px;
+    }
+    #nav__logo{
+      font-size: 2em;
+      font-family: 'Shrikhand', sans-serif !important;
+      font-weight: 300;
+      margin:0 40px;
+    }
+   
+    nav{
+      /* background-color: rgb(5, 22, 116); */
+      width: 100%;
+      height: 8vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color:#B09A6B;
+      align-items: center;
+      position: fixed;
+      font-family: "Poppins";
+      z-index: 50;
+    }
+
+    .nav__link--underline{
+      background: linear-gradient(currentColor 0 0) 
+      bottom left/
+      var(--underline-width, 0%) 0.1em
+      no-repeat;
+      color: rgb(255, 255, 255);
+      display: inline-block;
+      padding: 0 .5em 0.2em;
+      text-decoration: none;
+      transition: background-size 0.5s;
+    }
+    .nav__link--underline:hover{
+      --underline-width: 90%;
+    }
+    /* the "slide structure" class is responsible for the parallax effect and page sectors*/
+    .slide__structure{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height:100vh !important;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      text-align: center;
+    }
+
+    .slide__container{
+      width: 100%;
+    }
+    /* background of page sectors */
+    #slide__01{
+      background-color: #02203C;
+      /* background-image: url("https://wallpapercave.com/wp/wp2036967.jpg"); */
+      /* filter: brightness(40%); */
+    }
+
+    #slide__02{
+      background-image: url("https://wallpapers.com/images/featured/2e3clu2lte75v54u.jpg");
+    }
+  }
