@@ -104,7 +104,7 @@
 
     .slide__container{
       width: 100%;
-      height: 40vh;
+      height: 30vh;
       background:linear-gradient(rgb(214, 187, 129),  rgb(176, 154, 107));
     }
     
@@ -128,32 +128,70 @@
       text-align: justify;
     }
     /* background of page sectors */
-    #slide__01{
-      background-color: #02203C;
-      /* text-align: right; */
+    .slide__background--color--primary{
+      background-color: #02203C;   
     }
-    
+    .slide__background--color--secundary{
+      background-color: #ebebeb;
+    }
+    .slide__filter{
+      filter: brightness(65%);    
+    }
+    /* first section, slide 01/home */
     #anna__image{
       max-width: 408px;
-      z-index: 10;
+      z-index: 4;
       bottom: 0;
       position: absolute;
     }
 
     #embroidered__image{
       max-width: 500px;
-      z-index: 9;
+      z-index: 3;
       bottom: 0;
       position: absolute;
     }
-
+    /* section two, slide 02/about us */
     #slide__02{
-      background-image: url("../images/pexels-photo.jpeg");
+      background-image: url("../images/about_us.jpg");
     }
+
+    #aboutus__person--background{
+      max-width: 633px;
+      z-index: 5;
+      right:0;
+      position: static;
+      margin-left:52%;
+    }
+
+    #aboutus__person{
+      max-width: 55vh;
+      z-index: 6;
+      right: 0;
+      top:1vh;
+      position: absolute;
+      margin-right: 10em;
+
+    }
+
+    .intermedium__block_text--left .slide__text--block{
+      left:0;
+      position: absolute;
+    }
+    .intermedium__block_text--left .slide__paragraph{
+        margin-left: 10px;
+    }
+    
+    .intermedium__block_text--left .slide__title{
+      text-align: left;
+    }
+    /* section three, slide 03/Services */
     #slide__03{
       background-image: url("../images/pexels-cottonbro-studio-4778662.jpg");
     }
+    /* section four, slide 04/Team */
     #slide__04{
       background-image: url("../images/pexels-pixabay-256455.jpg");
     }
+
   }
