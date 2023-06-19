@@ -1,50 +1,72 @@
 @import url('variables.css');
 @import url('componentes/footer.css');
 @import url('reset.css');
-@media screen and (min-width:820px){
-    body{
-        overflow: hidden;
-    }
-    #login__background{
-        background-image: url('../images/bg_login.jpg');
+
+body {
+        background-image: url("background-image.jpg");
         background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    #register__background{
-        background-image: url('');
-    }
-    .form__container{
-        min-width: 10vw;
-        max-width: 28vw;
-        min-height: 70vh;
-        background-color: white;
-        margin: 10vh auto;
-        border-radius: 6%;
-        display: flex;
+        background-position: center center;
+        font-family: Arial, sans-serif;
         overflow: hidden;
-        flex-wrap: wrap;
-        -webkit-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.5);
-        -moz-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.5);
-        box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.5);
-    }
-    
-
-    .form__header{
-        height: 13vh;
-        width:100%;
-        border-top:0;
-        border-right: 0;
-        border-left: 0;
-        border-bottom: 2px;
-        border-color: #010D18;
-        border-style: solid;
-        background-color: #E0F0FF;
-        text-align:center;
-    }
-    
-    .form__container label{
-        display: block;
-    }
-
 }
+.imgbacklog{
+        background-size: cover;
+}
+
+.container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+}
+label {
+        display: block;
+        margin-bottom: 5px;
+        text-align: left;
+        color: #666;
+        font-weight: bold;
+}
+input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        color: #333;
+        font-size: 16px;
+}
+    
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #666;
+    }
