@@ -11,7 +11,7 @@ body {
         background-color: #02203c;
 }
 
-.logodocigas{
+.cigas__logo--config{
         height:120px;
         width: 120px;
 }
@@ -62,8 +62,7 @@ input[type="text"], input[type="password"] {
         font-size: 16px;
 }
         
-.botaologin{
-        width: 100%;
+.login__button{
         padding: 10px;
         border: none;
         border-radius: 5px;
@@ -73,5 +72,10 @@ input[type="text"], input[type="password"] {
         text-transform: uppercase;
         text-decoration: none;
         cursor: pointer;
-        margin-left: 77px;
+        margin:auto auto 10px auto;
+}
+
+/* register section*/
+#form__register{
+        display: none;
 }

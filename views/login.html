@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/login.css">
+	<script src="../public/js/script.js" defer></script>
+</head>
+<body>
+
+	<img class="cigas__logo--config" src="../public/images/logocigas.jpg">
+	<div class="container">
+		<form id="form__login" method="post">
+			<h1>Login</h1>
+			<label for="user__email--login">Email</label>
+			<input type="text" id="user__email--login" name="useremail" placeholder="Enter E-mail"  pattern="[a-z@]" required>
+			
+			<label for="user__password--login">Password</label>
+			<input type="password" id="user__password--login" name="password" placeholder="Enter Password" pattern="[a-zA-Z0-9].{8,}" required>
+			<a class="login__button" onclick="login()">Sign in</a>
+
+			<p>
+				<a href="#form__register" onclick="showRegister()">Don't Have an Account? Sign up</a>
+			</p>
+		</form>
+				<!-- Register form-->
+		<form id="form__register" method="post">
+				<h1>Login</h1>
+				<label for="user__email--register">Email</label>
+				<input type="text" id="user__email--register" name="userEmail" placeholder="Enter E-mail" required>
+				<label for="user__password--register">Password</label>
+				<input type="password" id="user__password--register" name="userPassword" placeholder="Enter Password" required>
+					
+					<a class="login__button" onclick="register()">Sign up</a>
+		
+					<p>
+						<a href="#form__login" onclick="showLogin()">Have an Account? Sign in</a>
+					</p>
+		</form>
+	</div>
+</body>
+</html>
