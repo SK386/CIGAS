@@ -1,5 +1,3 @@
-function showMenu(){
-    let buttonDashboard = document.getElementById("dashboard__structure");
-    buttonDashboard.id="dashboard__visible--show"
-    hiddenMenu()
+function createPost(){
+    console.log("ta clicavel");
 }

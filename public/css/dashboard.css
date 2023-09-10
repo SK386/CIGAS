@@ -1,8 +1,10 @@
 @import url("reset.css");
 @import url("variables.css");
 @import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 body{
-    overflow: hidden;
+    overflow:scroll;
 }
 ul{
     margin-top: 20px;
@@ -18,18 +20,8 @@ ul{
     overflow: hidden;
     z-index: 140;
     align-items: center;
-}
-
-#dashboard__visible--show{
-     width: 12vw;
-     display: flex;
-     background-color: #022C51;
-     height: 100vh;
-     justify-content: space-evenly;
-     overflow: hidden;
-     transition: 0.5s; 
-     z-index: 141;
-     align-items: center;
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+    position: absolute;
 }
 
 #dashboard__navbar--top{
@@ -41,8 +33,9 @@ ul{
     justify-content: space-between;
     list-style: none;
     overflow: hidden;
-    z-index: 200;
+    z-index: 142;
     border-bottom: 2px solid black;
+    position: absolute
 }
 #dashboard__navbar--top a {
     text-decoration: none;
@@ -99,3 +92,49 @@ i:hover{
 }
 
 
+/* main section*/
+#dashboard__main{
+    width: 94%;
+    height: 93vh;
+    background-color: #E3E4E5;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    overflow-y:scroll;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    float: inline-start;
+    position:absolute;
+}
+
+.dashboard__main--nav{
+    width: 40%;
+    height:8%;
+    background-color:#E5C48B;
+    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3em;
+    font-family: "Poppins", "Roboto", sans-serif;
+}
+
+.dashboard__main--button{
+    position: absolute;
+    right: 5vw;
+    top: 3vh;
+}
+
+.main__button{
+    cursor: pointer;
+    width:100px;
+    height: 30px;
+    border-radius: 8%;
+    background-color: #fabb4f;
+    border:2px solid #fabb4f;
+    box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75);
+}
