@@ -16,13 +16,14 @@ function login(){
 
     let formLogin = {
          userPassword:document.getElementById("user__password--login").value,
-         userEmail:document.getElementById("user__email--login").value
-    
+         userEmail:document.getElementById("user__email--login").value   
     }
     
-     if(formLogin.userPassword.length < 8){
-         alert("ERROR: The password need have 8 characters or more");
-     }
+    let forml = document.getElementById("form__login");
+    forml.submit();
+    //  if(formLogin.userPassword.length < 8){
+    //      alert("ERROR: The password need have 8 characters or more");
+    //  }
 }
 function showLogin(){
     let formr = document.getElementById("form__register");
@@ -44,4 +45,6 @@ function register(){
         userEmail:document.getElementById("user__email--register").value,
         userPassword:document.getElementById("user__password--register").value
     }
+    let form =  document.getElementById("form__register");
+    form.submit()
 }

@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login Page</title>
 	<link rel="stylesheet" type="text/css" href="../public/css/login.css">
-	<script src="../public/js/script.js" defer></script>
+	<script src="../public/js/login.js" defer></script>
 </head>
 <body>
 
@@ -14,11 +14,11 @@
 		<form id="form__login" method="post">
 			<h1>Login</h1>
 			<label for="user__email--login">Email</label>
-			<input type="text" id="user__email--login" name="useremail" placeholder="Enter E-mail"  pattern="[a-z@]" required>
+			<input type="email" id="user__email--login" name="useremail" placeholder="Enter E-mail"  pattern="[a-z@]" required>
 			
 			<label for="user__password--login">Password</label>
 			<input type="password" id="user__password--login" name="password" placeholder="Enter Password" pattern="[a-zA-Z0-9].{8,}" required>
-			<a class="login__button" onclick="login()">Sign in</a>
+			<button class="login__button" onclick="login()">Sign in</button>
 
 			<p>
 				<a href="#form__register" onclick="showRegister()">Don't Have an Account? Sign up</a>
@@ -26,13 +26,43 @@
 		</form>
 				<!-- Register form-->
 		<form id="form__register" method="post">
-				<h1>Login</h1>
-				<label for="user__email--register">Email</label>
-				<input type="text" id="user__email--register" name="userEmail" placeholder="Enter E-mail" required>
-				<label for="user__password--register">Password</label>
-				<input type="password" id="user__password--register" name="userPassword" placeholder="Enter Password" required>
-					
-					<a class="login__button" onclick="register()">Sign up</a>
+				<h1>Sign up</h1>
+				<!-- columns and rows-->
+					<!--row 1-->
+				<div class="form__row">
+					<div class="form__column">
+						<label for="user__name--first">First Name</label>
+						<input type="text" id="user__name--first" name="userFname" placeholder="Mike" required>
+					</div>
+					<div class="form__column">	
+						<label for="user__name--last">Last Name</label>
+						<input type="text" id="user__name--last" name="userLname" placeholder="Silver" required></input>
+					</div>
+				</div>
+					<!--row 2-->
+				<div class="form__row">
+					<div class="form__column">
+						<label for="user__email--register">Email</label>
+						<input type="email" id="user__email--register" name="userEmail" placeholder="Enter E-mail" required>
+					</div>
+					<div class="form__column">
+						<label for="user__phone">Phone</label>
+						<input type="tel" id="user__phone" name="userPhone" placeholder="Enter a Phone number" required>
+					</div>
+				</div>
+					<!--row 3-->
+				<div class="form__row">
+					<div class="form__column">
+						<label for="user__password--register">Password</label>
+						<input type="password" id="user__password--register" name="userPassword" placeholder="Enter Password" required>
+					</div>
+					<div class="form__column">
+						<label for="user__password--confirm">Confirm Password</label>
+						<input type="password" id="user__password--confirm" placeholder="Confirm Password" onclick="confirmPassword()" required>
+					</div>
+				</div>
+					<!--form final-->
+					<button class="login__button" onclick="register()">Sign up</button>
 		
 					<p>
 						<a href="#form__login" onclick="showLogin()">Have an Account? Sign in</a>
