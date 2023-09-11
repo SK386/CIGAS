@@ -1,0 +1,42 @@
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    color: black;
+}
+
+.team-member {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+.background1{
+    background-color: var(--tertiary-color);
+}
+
+/*services*/
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.image-box {
+    flex: 0 0 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
