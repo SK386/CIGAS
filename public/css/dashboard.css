@@ -190,3 +190,25 @@ i:hover{
     display: flex;
     overflow-y: scroll;
 }
+
+/* post notification page */
+.post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+
+.post-title {
+    font-weight: bold;
+}
+
+.post-time {
+    color: #777;
+    margin-right: 10px;
+}
+
+.post-date {
+    color: #777;
+}
