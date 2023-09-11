@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 body{
     overflow:scroll;
 }
@@ -35,7 +36,8 @@ ul{
     overflow: hidden;
     z-index: 142;
     border-bottom: 2px solid black;
-    position: absolute
+    position: absolute;
+    align-items: center;
 }
 #dashboard__navbar--top a {
     text-decoration: none;
@@ -51,7 +53,7 @@ ul{
 }
 
 #nav__account{
-    position: relative;
+    position: fixed;
     right:20px;
 }
 
@@ -121,6 +123,7 @@ i:hover{
     justify-content: space-evenly;
     font-size: 1.3em;
     font-family: "Poppins", "Roboto", sans-serif;
+    position: absolute;
 }
 
 .dashboard__main--button{
@@ -137,4 +140,53 @@ i:hover{
     background-color: #fabb4f;
     border:2px solid #fabb4f;
     box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75);
+}
+/* post page config*/
+.main__post{
+    width: 50%;
+    height: 95%;
+    background-color:#ffffff;
+    position: relative;
+    top:20px;
+    border-radius: 2%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.18);
+    overflow-y: scroll;
+    overflow-x:hidden;
+    flex-flow: row wrap;
+}
+
+.post__header{
+    margin:8vh;
+    font-family: "Lato", sans-serif;
+}
+
+.post__header h1{
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+}
+
+.post__header p{
+    font-style: italic;
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.post__body{
+    width:80%;
+    height: 100%;
+    margin:0 8vh;
+    text-align: justify;
+}
+
+/*main body */
+
+.main__body{
+    position: relative;
+    top:11vh;
+    width: 80%;
+    height: 80vh;
+    left: 0;
+    display: flex;
+    overflow-y: scroll;
 }
