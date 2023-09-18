@@ -1,4 +1,4 @@
-function post(){
+function createPost(){
     /*recovery form data*/
     let formValue ={
             title:document.getElementById("titlePost").value,

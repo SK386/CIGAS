@@ -1,0 +1,28 @@
+.new__post{
+    width: 100vw;
+    height: 12vh;
+    background-color: black;
+    opacity: 0.5;
+    position: relative;
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.new__post i{
+    font-size: 5em;
+    color:#d4962a;
+}
+
+.new__post h3{
+    text-transform: uppercase;
+}
+
+.new__post:hover{
+    background-color: black;
+    opacity: 0.6;
+}
